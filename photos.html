@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+
+    <style>
+    header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    header .logo {
+    max-width: 80px;
+    }
+
+    header .toggle {
+    max-width: 40px;
+    cursor: pointer;
+    }
+
+    header .toggle img {
+        max-width: 100%;
+    }
+
+    nav ul.menu {
+        display: flex;
+        list-style-type: none;
+    }
+
+    nav ul.menu li {
+        margin-right: 20px;
+    }
+
+    nav ul.menu li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    h1 
+    {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5em;
+        color: #333;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    
+    .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding-left: 100px;
+        padding-right: 100px;                
+    }      
+    .photo-gallery img {
+        width: 100%;
+        height: auto;
+    }
+    </style>
+
+</head>
+
+<header>
+    <a href="#" class="logo"><img src="img/logo.png"></a>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="photos.html">Photos</a></li>
+        </ul>
+    </nav>
+    <div class="toggle"><img src="img/toggle.png"></div>
+</header>
+
+<body>
+    <h1 class="photos">Photos</h1>
+    <div class="photo-gallery">
+        <img src="img/photo1.jpg" alt="Photo 1">
+        <img src="img/photo2.jpg" alt="Photo 2">
+        <img src="img/photo3.jpg" alt="Photo 3">
+        <img src="img/Photo4.jpg" alt="Photo 4">
+        <img src="img/Photo5.jpg" alt="Photo 5">
+        <img src="img/Photo6.jpg" alt="Photo 6">
+        <img src="img/Photo7.jpg" alt="Photo 7">
+        <img src="img/Photo8.jpg" alt="Photo 8">
+        <img src="img/Photo9.jpg" alt="Photo 9">
+        <img src="img/Photo10.jpg" alt="Photo 10">
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png"></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="photos.html">Photos</a></li>
+            </ul>
+        </nav>
+        <div class="toggle"><img src="img/toggle.png"></div>
+    </header>
+
+    <div class="banner">
+        <div class="content">
+            <h2>kimi no na wa</h2>
+            <p>Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person.<br>
+            <br>
+            Genres:  comedy, drama, romance, supernatural<br>
+            <br>Themes: amnesia, body switch, iyashikei, natural disaster, tragedy</p>
+        
+            <a href="#" class="play" onclick="toggle();"><img src="img/play.png">Watch Trailer</a>
+            
+            <ul class="sci">
+                <li><a href="https://www.facebook.com"><img src="img/facebook.png"></a></li>
+                <li><a href="https://www.instagram.com"><img src="img/instagram.png"></a></li>
+                <li><a href="https://www.twitter.com"><img src="img/twitter.png"></a></li>
+            </ul>                            
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="trailer">
+        <video src="img/trailer.mp4" controls="true"></video>    
+        <img src="img/close.png" class="close" onclick="toggle();">        
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+</html>
